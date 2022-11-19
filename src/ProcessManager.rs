@@ -60,6 +60,14 @@ pub struct ProcessManager {
 
     //阻塞队列
 
+    //ready队列,底层是红黑树，在插入和删除的时候动态排序
+
+    //end队列
+
+    //时间记录器
+    count_:u32;
+    //当前正在执行的任务
+
 }
 
 impl ProcessManager {
