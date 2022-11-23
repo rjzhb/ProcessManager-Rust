@@ -30,4 +30,10 @@ pub struct ProcessManager {
 
 impl ProcessManager {
     
+    fn new(pcb_list: Vec<pcb_tuple>) -> ProcessManager {
+        ProcessManager {
+            pcb_list_,
+            
+        }
+    }
 }
