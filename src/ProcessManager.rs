@@ -23,7 +23,7 @@ pub struct ProcessManager {
     //end队列
     end_queue:LinkedList<pcb_tuple>,
     //时间记录器
-    count_:u32;
+    count_:i32;
     //当前正在执行的任务
     running_prog_:pcb_tuple,
 }
@@ -33,6 +33,7 @@ impl ProcessManager {
     fn new(pcb_list: Vec<pcb_tuple>) -> ProcessManager {
         ProcessManager {
             pcb_list_,
+
             
         }
     }
